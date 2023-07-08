@@ -183,7 +183,7 @@ Please note that while these operations can be performed on a technical level, a
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request.
 
-## ❤️ Thank you for your support!
+## [❤️](https://jugendamt-deutschland.de) Thank you for your support!
 If you appreciate my work, please consider supporting me:
 
 - Become a Sponsor: [Link to my sponsorship page](https://github.com/sponsors/volkansah)
