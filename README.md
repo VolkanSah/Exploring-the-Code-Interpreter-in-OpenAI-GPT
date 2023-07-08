@@ -18,13 +18,13 @@ reasons, it opens up a whole new set of possibilities for how users can interact
 - [Working with Images](#working-with-images)
 
 
-# The Code Interpreter in OpenAI ChatGPT
+## The Code Interpreter in OpenAI ChatGPT
 
-## What is the Code Interpreter?
+### What is the Code Interpreter?
 
 The code interpreter is a tool developed by OpenAI to execute programming code in an interactive environment. It is capable of running Python code and displaying the results in real-time.
 
-## What is the Code Interpreter used for?
+### What is the Code Interpreter used for?
 
 The code interpreter can be used for a variety of tasks, including:
 
@@ -33,11 +33,11 @@ The code interpreter can be used for a variety of tasks, including:
 - Prototyping and debugging Python code
 - Interactive learning and practicing Python programming
 
-## How can ChatGPT assist with programming?
+### How can ChatGPT assist with programming?
 
 ChatGPT can generate, review, and debug code based on the provided requirements. It can also assist in structuring code and provide suggestions for improvements. Moreover, it can explain complex programming concepts and assist in solving coding problems.
 
-## What are the limitations?
+### What are the limitations?
 
 While the code interpreter is a powerful tool, it has certain limitations:
 
@@ -48,7 +48,7 @@ While the code interpreter is a powerful tool, it has certain limitations:
 
 Despite these limitations, the code interpreter is a versatile tool that can greatly assist programmers of all skill levels.
 
-## What are the benefits?
+### What are the benefits?
 
 The code interpreter offers several benefits:
 
@@ -180,7 +180,7 @@ img_merged = Image.merge('RGB', [img1, img2, img3])
 
 Please note that while these operations can be performed on a technical level, as an AI model, I cannot make aesthetic or creative decisions. Any changes I make to an image are based on technical instructions, not creative or artistic considerations.
 
-## Contributing
+### Contributing
 Contributions are welcome! Please feel free to submit a pull request.
 
 ## [❤️](https://jugendamt-deutschland.de) Thank you for your support!
