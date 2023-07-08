@@ -16,6 +16,7 @@ reasons, it opens up a whole new set of possibilities for how users can interact
 - [Data Storage](#data-storage)
     - [Detailed Explanation of the Data Storage](#detailed-explanation-of-the-data-storage)
 - [Working with Images](#working-with-images)
+- ![How to enable Code Interpreter?](settings-ci.png)
 
 
 ## The Code Interpreter in OpenAI ChatGPT
