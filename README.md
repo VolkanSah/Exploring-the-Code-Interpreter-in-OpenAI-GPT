@@ -16,6 +16,7 @@ reasons, it opens up a whole new set of possibilities for how users can interact
 - [Data Storage](#data-storage)
     - [Detailed Explanation of the Data Storage](#detailed-explanation-of-the-data-storage)
 - [Working with Images](#working-with-images)
+- [Working with Exel-Files](#working-with-exel-files)
 - [How to enable Code Interpreter?](settings-ci.png)
 
 
@@ -178,6 +179,63 @@ hist = img.histogram()
 # Merge images
 img_merged = Image.merge('RGB', [img1, img2, img3])
 ```
+
+
+## Working with Excel Files
+
+Handling Excel files is a common task that can range from data analysis to generating reports. Here's a guide on basic and advanced operations with Excel files using Python:
+
+#### Reading and Writing Excel Files
+
+To read and write Excel files, `pandas` along with `openpyxl` is commonly used. Here's how to read from and write to an Excel file:
+
+```python
+import pandas as pd
+
+# Load an Excel file
+df = pd.read_excel('/mnt/data/example.xlsx')
+
+# Display data
+print(df.head())
+```
+
+#### To write data to an Excel file:
+
+```python
+# Create a DataFrame
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}
+df = pd.DataFrame(data)
+
+# Write DataFrame to an Excel file
+df.to_excel('/mnt/data/saved_data.xlsx', index=False)
+```
+
+#### Filtering and Manipulating Data
+
+You can filter data based on conditions, add new columns, or transform existing data:
+
+```python
+# Filter rows where age is greater than 28
+filtered_df = df[df['Age'] > 28]
+
+# Add a new column
+df['Age Next Year'] = df['Age'] + 1
+
+# Sort data
+sorted_df = df.sort_values(by='Age', ascending=False)
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 Please note that while these operations can be performed on a technical level, as an AI model, It cannot make aesthetic or creative decisions. Any changes It makes to an image are based on technical instructions, not creative or artistic considerations.
 
