@@ -342,5 +342,5 @@ If you appreciate my work, please consider supporting me:
 
 ### Credits
 - [Volkan Kücükbudak //NCF](https://gihub.com/volkansah)
-- and OpenAI's ChatGPT4 with Code Interpreter for providing interactive coding assistance and insights.
+- and OpenAI's ChatGPT4 with Code Interpreter for providing interactive coding assistance and insights & tipps.
 
