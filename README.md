@@ -318,7 +318,6 @@ pdf.output('/mnt/data/new_example.pdf')
 
 
 
-Please note that while these operations can be performed on a technical level, as an AI model, It cannot make aesthetic or creative decisions. Any changes It makes to an image are based on technical instructions, not creative or artistic considerations.
 
 ### Contributing
 Contributions are welcome! Please feel free to submit a pull request.
