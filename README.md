@@ -19,7 +19,6 @@ reasons, it opens up a whole new set of possibilities for how users can interact
 - [Working with Exel-Files](#working-with-excel-files)
 - [Working with Word-Files](#working-with-word-files)
 - [Working with PDF-Files](#working-with-pdf-files)
-- [How to enable Code Interpreter?](settings-ci.png)
 
 
 ## The Code Interpreter in OpenAI ChatGPT
