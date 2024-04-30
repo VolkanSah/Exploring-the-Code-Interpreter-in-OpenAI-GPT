@@ -17,6 +17,8 @@ reasons, it opens up a whole new set of possibilities for how users can interact
     - [Detailed Explanation of the Data Storage](#detailed-explanation-of-the-data-storage)
 - [Working with Images](#working-with-images)
 - [Working with Exel-Files](#working-with-excel-files)
+- [Working with Word-Files](#working-with-word-files)
+- - [Working with PDF-Files](#working-with-pdf-files)
 - [How to enable Code Interpreter?](settings-ci.png)
 
 
@@ -224,6 +226,86 @@ df['Age Next Year'] = df['Age'] + 1
 # Sort data
 sorted_df = df.sort_values(by='Age', ascending=False)
 ```
+
+### Working with Word Files
+
+Handling Microsoft Word files involves reading, writing, and modifying documents. Here’s how you can manage Word files using Python:
+
+#### Reading from Word Files
+
+To read text from Word documents, the `python-docx` library is used:
+
+```python
+from docx import Document
+
+# Load a Word document
+doc = Document('/mnt/data/example.docx')
+
+# Read each paragraph
+for para in doc.paragraphs:
+    print(para.text)
+```
+
+#### Writing to Word Files
+
+To create and write to Word documents:
+
+```python
+from docx import Document
+
+# Create a new Word document
+doc = Document()
+doc.add_paragraph('Hello, this is a test document.')
+
+# Save the document
+doc.save('/mnt/data/new_example.docx')
+```
+
+### Working with PDF Files
+
+Managing PDF files often involves reading, extracting text, and sometimes converting them to other formats. Here’s how to handle PDF files using Python:
+
+#### Reading and Extracting Text from PDF Files
+
+To read and extract text from PDF files, the `PyPDF2` library is commonly used:
+
+```python
+import PyPDF2
+
+# Open a PDF file
+with open('/mnt/data/example.pdf', 'rb') as file:
+    pdf_reader = PyPDF2.PdfReader(file)
+    
+    # Extract text from the first page
+    page = pdf_reader.pages[0]
+    text = page.extract_text()
+    print(text)
+```
+
+#### Creating and Writing to PDF Files
+
+Creating and writing text to PDF files can be done using the `fpdf2` library:
+
+```python
+from fpdf import FPDF
+
+# Create instance of FPDF class
+pdf = FPDF()
+
+# Add a page
+pdf.add_page()
+
+# Set font
+pdf.set_font("Arial", size = 12)
+
+# Add a cell
+pdf.cell(200, 10, txt = "Welcome to PDF handling with Python!", ln = True, align = 'C')
+
+# Save the PDF to a file
+pdf.output('/mnt/data/new_example.pdf')
+```
+
+
 
 
 
