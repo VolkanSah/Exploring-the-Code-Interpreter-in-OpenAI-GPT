@@ -325,10 +325,6 @@ Contributions are welcome! Please feel free to submit a pull request.
 ## [❤️](https://jugendamt-deutschland.de) Thank you for your support!
 If you appreciate my work, please consider supporting me:
 
-- Become a Sponsor: [Link to my sponsorship page](https://github.com/sponsors/volkansah)
-- :star: my projects: Starring projects on GitHub helps increase their visibility and can help others find my work. 
-- Follow me: Stay updated with my latest projects and releases.
-
 
 ### 👣 other GPT stuff 
 - [Link to ChatGPT Shellmaster](https://github.com/VolkanSah/ChatGPT-ShellMaster/)
@@ -340,7 +336,11 @@ If you appreciate my work, please consider supporting me:
 - [Basic GPT Webinterface](https://github.com/VolkanSah/GPT-API-Integration-in-HTML-CSS-with-JS-PHP)
 
 
+
 ### Credits
 - [Volkan Kücükbudak //NCF](https://gihub.com/volkansah)
 - and OpenAI's ChatGPT4 with Code Interpreter for providing interactive coding assistance and insights & tipps.
+-  Become a Sponsor: [Link to my sponsorship page](https://github.com/sponsors/volkansah)
+- :star: my projects: Starring projects on GitHub helps increase their visibility and can help others find my work. 
+- Follow me: Stay updated with my latest projects and releases.
 
