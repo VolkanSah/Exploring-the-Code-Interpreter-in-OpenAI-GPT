@@ -24,6 +24,7 @@ reasons, it opens up a whole new set of possibilities for how users can interact
   - [Advanced Word Processing](#advanced-word-processing)
 - [Working with PDF-Files](#working-with-pdf-files)
   - [Advanced PDF Processing](#advanced-pdf-processing)
+- [Advanced Applications of the Code Interpreter (GPT)](advanced-1.md)
 
 
 
