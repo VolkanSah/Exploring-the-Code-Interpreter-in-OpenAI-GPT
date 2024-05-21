@@ -21,6 +21,7 @@ reasons, it opens up a whole new set of possibilities for how users can interact
 - [Working with Exel-Files](#working-with-excel-files)
   - [Advanced Excel Processing](#advanced-excel-processing)
 - [Working with Word-Files](#working-with-word-files)
+  - [Advanced Word Processing](#advanced-word-processing)
 - [Working with PDF-Files](#working-with-pdf-files)
 
 
