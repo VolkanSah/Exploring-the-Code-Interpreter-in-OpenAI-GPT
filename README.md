@@ -23,6 +23,8 @@ reasons, it opens up a whole new set of possibilities for how users can interact
 - [Working with Word-Files](#working-with-word-files)
   - [Advanced Word Processing](#advanced-word-processing)
 - [Working with PDF-Files](#working-with-pdf-files)
+  - [Advanced PDF Processing](#advanced-pdf-processing)
+
 
 
 ## The Code Interpreter in OpenAI ChatGPT
@@ -452,6 +454,127 @@ pdf.cell(200, 10, txt = "Welcome to PDF handling with Python!", ln = True, align
 
 # Save the PDF to a file
 pdf.output('/mnt/data/new_example.pdf')
+```
+
+#A dvanced PDF Processing
+Handling PDF files often involves reading, extracting text, merging, splitting, and modifying documents. Here are some advanced operations using Python:
+### Merging Multiple PDF Files
+
+```python
+import PyPDF2
+
+# List of PDF files to be merged
+pdf_files = ['/mnt/data/file1.pdf', '/mnt/data/file2.pdf', '/mnt/data/file3.pdf']
+
+# Create a PDF merger object
+pdf_merger = PyPDF2.PdfMerger()
+
+# Append each PDF file
+for pdf in pdf_files:
+    pdf_merger.append(pdf)
+
+# Write out the merged PDF
+with open('/mnt/data/merged.pdf', 'wb') as merged_pdf:
+    pdf_merger.write(merged_pdf)
+```
+### Splitting a PDF into Multiple Files
+
+```python
+import PyPDF2
+
+# Path to the PDF file
+pdf_path = '/mnt/data/example.pdf'
+
+# Create a PDF reader object
+pdf_reader = PyPDF2.PdfReader(pdf_path)
+
+# Split the PDF into separate pages
+for page_num in range(len(pdf_reader.pages)):
+    pdf_writer = PyPDF2.PdfWriter()
+    pdf_writer.add_page(pdf_reader.pages[page_num])
+    
+    # Save each page as a separate PDF
+    output_path = f'/mnt/data/split_page_{page_num + 1}.pdf'
+    with open(output_path, 'wb') as output_pdf:
+        pdf_writer.write(output_pdf)
+```
+### Adding a Watermark to a PDF
+
+```python
+import PyPDF2
+
+# Paths to the original PDF and the watermark PDF
+original_pdf_path = '/mnt/data/original.pdf'
+watermark_pdf_path = '/mnt/data/watermark.pdf'
+
+# Create PDF reader objects
+original_pdf = PyPDF2.PdfReader(original_pdf_path)
+watermark_pdf = PyPDF2.PdfReader(watermark_pdf_path)
+
+# Create a PDF writer object
+pdf_writer = PyPDF2.PdfWriter()
+
+# Apply the watermark to each page
+for page_num in range(len(original_pdf.pages)):
+    original_page = original_pdf.pages[page_num]
+    watermark_page = watermark_pdf.pages[0]
+    original_page.merge_page(watermark_page)
+    pdf_writer.add_page(original_page)
+
+# Save the watermarked PDF
+with open('/mnt/data/watermarked.pdf', 'wb') as watermarked_pdf:
+    pdf_writer.write(watermarked_pdf)
+```
+### Extracting Text from a Specific Page Range
+```python
+import PyPDF2
+
+# Path to the PDF file
+pdf_path = '/mnt/data/example.pdf'
+
+# Create a PDF reader object
+pdf_reader = PyPDF2.PdfReader(pdf_path)
+
+# Specify the range of pages to extract text from
+start_page = 1
+end_page = 3
+
+# Extract text from the specified page range
+extracted_text = ''
+for page_num in range(start_page - 1, end_page):
+    page = pdf_reader.pages[page_num]
+    extracted_text += page.extract_text()
+
+print(extracted_text)
+```
+### Adding Metadata to a PDF
+```python
+import PyPDF2
+
+# Path to the PDF file
+pdf_path = '/mnt/data/example.pdf'
+
+# Create a PDF reader object
+pdf_reader = PyPDF2.PdfReader(pdf_path)
+pdf_writer = PyPDF2.PdfWriter()
+
+# Copy all pages to the writer object
+for page_num in range(len(pdf_reader.pages)):
+    pdf_writer.add_page(pdf_reader.pages[page_num])
+
+# Add metadata
+metadata = {
+    '/Title': 'Example PDF',
+    '/Author': 'Your Name',
+    '/Subject': 'Example Subject',
+    '/Keywords': 'PDF, example, metadata'
+}
+pdf_writer.add_metadata(metadata)
+
+# Save the PDF with metadata
+with open('/mnt/data/metadata_example.pdf', 'wb') as metadata_pdf:
+    pdf_writer.write(metadata_pdf)
+
 ```
 
 
