@@ -26,8 +26,7 @@ reasons, it opens up a whole new set of possibilities for how users can interact
   - [Advanced PDF Processing](#advanced-pdf-processing)
 - [Contributing](#contributing)
 - [Credits](#credits)
-
-### [Advanced Applications of the Code Interpreter (GPT)](advanced-1.md)
+- #### [For advanced Applications of the Code Interpreter please here ...](advanced-1.md)
 
 
 
