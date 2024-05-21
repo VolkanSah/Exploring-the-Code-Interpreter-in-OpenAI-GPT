@@ -24,9 +24,10 @@ reasons, it opens up a whole new set of possibilities for how users can interact
   - [Advanced Word Processing](#advanced-word-processing)
 - [Working with PDF-Files](#working-with-pdf-files)
   - [Advanced PDF Processing](#advanced-pdf-processing)
+- [other advanced Applications of the Code Interpreter](advanced-1.md)
 - [Contributing](#contributing)
 - [Credits](#credits)
-- #### [For advanced Applications of the Code Interpreter please here ...](advanced-1.md)
+
 
 
 
