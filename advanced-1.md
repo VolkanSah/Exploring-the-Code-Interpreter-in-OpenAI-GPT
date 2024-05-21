@@ -1,5 +1,5 @@
 
-# Advanced Applications of the Code Interpreter in OpenAI (GPT)
+# Advanced Applications of the Code Interpreter (GPT)
 
 [For Webview](https://volkansah.github.io/Advanced-Code-Interpreter-Examples/advanced-1/)
 
