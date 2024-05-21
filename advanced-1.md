@@ -214,7 +214,7 @@ display(slider)
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request.
 
-## [❤️](https://jugendamt-deutschland.de) Thank you for your support!
+### [❤️](https://jugendamt-deutschland.de) Thank you for your support!
 If you appreciate my work, please consider supporting me:
 
 
