@@ -40,11 +40,11 @@ The code interpreter can be used for a variety of tasks, including:
 - Prototyping and debugging Python code
 - Interactive learning and practicing Python programming
 
-### How can ChatGPT assist with programming?
+## How can ChatGPT assist with programming?
 
 ChatGPT can generate, review, and debug code based on the provided requirements. It can also assist in structuring code and provide suggestions for improvements. Moreover, it can explain complex programming concepts and assist in solving coding problems.
 
-### What are the limitations?
+## What are the limitations?
 
 While the code interpreter is a powerful tool, it has certain limitations:
 
@@ -55,7 +55,7 @@ While the code interpreter is a powerful tool, it has certain limitations:
 
 Despite these limitations, the code interpreter is a versatile tool that can greatly assist programmers of all skill levels.
 
-### What are the benefits?
+## What are the benefits?
 
 The code interpreter offers several benefits:
 
@@ -76,7 +76,7 @@ pip install pandas openpyxl python-docx PyPDF2 fpdf2 matplotlib pillow
 
 The code interpreter has access to a special directory, '/mnt/data', where it can read and write files. This can be used for operations that need to save or load data, like writing logs, saving plots, or loading data for analysis. However, no other locations on the filesystem can be accessed.
 
-## Detailed Explanation of the Data Storage
+### Detailed Explanation of the Data Storage
 
 The '/mnt/data' directory is a special storage location that the code interpreter can access to read and write files. This is especially useful for operations that require persistent storage or the exchange of data between different code executions.
 
@@ -194,7 +194,7 @@ img_merged = Image.merge('RGB', [img1, img2, img3])
 ```
 
 
-## Working with Excel Files
+# Working with Excel Files
 
 Handling Excel files is a common task that can range from data analysis to generating reports. Here's a guide on basic and advanced operations with Excel files using Python:
 
@@ -212,7 +212,7 @@ df = pd.read_excel('/mnt/data/example.xlsx')
 print(df.head())
 ```
 
-#### To write data to an Excel file:
+###To write data to an Excel file:
 
 ```python
 # Create a DataFrame
@@ -223,7 +223,7 @@ df = pd.DataFrame(data)
 df.to_excel('/mnt/data/saved_data.xlsx', index=False)
 ```
 
-#### Filtering and Manipulating Data
+### Filtering and Manipulating Data
 
 You can filter data based on conditions, add new columns, or transform existing data:
 
@@ -238,10 +238,10 @@ df['Age Next Year'] = df['Age'] + 1
 sorted_df = df.sort_values(by='Age', ascending=False)
 ```
 
-### Advanced Excel Processing
+## Advanced Excel Processing
 
 Besides reading and writing Excel files, you can also perform advanced data processing tasks such as creating pivot tables or merging multiple Excel files.
-#### Creating a Pivot Table
+### Creating a Pivot Table
 
 ```python
 import pandas as pd
@@ -255,7 +255,7 @@ pivot_table = df.pivot_table(index='Category', values='Sales', aggfunc='sum')
 # Display the pivot table
 print(pivot_table)
 ```
-#### Merging Multiple Excel Files
+### Merging Multiple Excel Files
 
 ```python
 import pandas as pd
@@ -272,7 +272,7 @@ merged_df = pd.concat(df_list, ignore_index=True)
 print(merged_df.head())
 ```
 
-#### Troubleshooting
+## Troubleshooting
 Here are some common issues and their solutions:
 
 1. ImportError: No module named '...':
@@ -287,11 +287,11 @@ Here are some common issues and their solutions:
 **If you encounter further issues, open an issue on GitHub or contact the project maintainer.**
 
 
-## Working with Word Files
+# Working with Word Files
 
 Handling Microsoft Word files involves reading, writing, and modifying documents. Here’s how you can manage Word files using Python:
 
-#### Reading from Word Files
+### Reading from Word Files
 
 To read text from Word documents, the `python-docx` library is used:
 
@@ -321,7 +321,7 @@ doc.add_paragraph('Hello, this is a test document.')
 doc.save('/mnt/data/new_example.docx')
 ```
 
-### Advanced Word Processing
+## Advanced Word Processing
 
 ```python
 from docx import Document
@@ -410,11 +410,11 @@ doc.save('/mnt/data/header_footer_example.docx')
 
 
 
-## Working with PDF Files
+# Working with PDF Files
 
 Managing PDF files often involves reading, extracting text, and sometimes converting them to other formats. Here’s how to handle PDF files using Python:
 
-#### Reading and Extracting Text from PDF Files
+### Reading and Extracting Text from PDF Files
 
 To read and extract text from PDF files, the `PyPDF2` library is commonly used:
 
@@ -431,7 +431,7 @@ with open('/mnt/data/example.pdf', 'rb') as file:
     print(text)
 ```
 
-### Creating and Writing to PDF Files
+## Creating and Writing to PDF Files
 
 Creating and writing text to PDF files can be done using the `fpdf2` library:
 
@@ -469,7 +469,7 @@ pdf.output('/mnt/data/new_example.pdf')
 
 
 
-### Contributing
+## Contributing
 Contributions are welcome! Please feel free to submit a pull request.
 
 ## [❤️](https://jugendamt-deutschland.de) Thank you for your support!
