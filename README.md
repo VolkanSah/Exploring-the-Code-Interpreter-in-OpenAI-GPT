@@ -286,7 +286,7 @@ Here are some common issues and their solutions:
 **If you encounter further issues, open an issue on GitHub or contact the project maintainer.**
 
 
-### Working with Word Files
+## Working with Word Files
 
 Handling Microsoft Word files involves reading, writing, and modifying documents. Here’s how you can manage Word files using Python:
 
@@ -305,7 +305,7 @@ for para in doc.paragraphs:
     print(para.text)
 ```
 
-#### Writing to Word Files
+### Writing to Word Files
 
 To create and write to Word documents:
 
@@ -320,7 +320,96 @@ doc.add_paragraph('Hello, this is a test document.')
 doc.save('/mnt/data/new_example.docx')
 ```
 
-### Working with PDF Files
+### Advanced Word Processing
+
+```python
+from docx import Document
+
+# Create a new Word document
+doc = Document()
+
+# Add a table with specified number of rows and columns
+table = doc.add_table(rows=3, cols=3)
+
+# Add data to the table
+data = [
+    ["Header 1", "Header 2", "Header 3"],
+    ["Row 1, Col 1", "Row 1, Col 2", "Row 1, Col 3"],
+    ["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3"]
+]
+
+for row_index, row_data in enumerate(data):
+    row = table.rows[row_index]
+    for col_index, cell_data in enumerate(row_data):
+        row.cells[col_index].text = cell_data
+
+# Save the document
+doc.save('/mnt/data/table_example.docx')
+```
+### Formatting Text in a Word Document
+```python
+from docx import Document
+from docx.shared import Pt, RGBColor
+
+# Load a Word document
+doc = Document('/mnt/data/example.docx')
+
+# Add a paragraph with specific formatting
+paragraph = doc.add_paragraph()
+run = paragraph.add_run('This is a formatted text.')
+run.font.size = Pt(14)  # Font size
+run.font.bold = True  # Bold text
+run.font.color.rgb = RGBColor(255, 0, 0)  # Red color text
+
+# Save the document
+doc.save('/mnt/data/formatted_text.docx')
+```
+### Adding Images to a Word Document
+```python
+from docx import Document
+from docx.shared import Inches
+
+# Create a new Word document
+doc = Document()
+
+# Add a paragraph
+doc.add_paragraph('Below is an image:')
+
+# Add an image to the document
+doc.add_picture('/mnt/data/your_image.jpg', width=Inches(4), height=Inches(3))
+
+# Save the document
+doc.save('/mnt/data/image_example.docx')
+```
+### Inserting Headers and Footers
+```python
+from docx import Document
+
+# Create a new Word document
+doc = Document()
+
+# Add a header
+header = doc.sections[0].header
+header_paragraph = header.paragraphs[0]
+header_paragraph.text = "This is the header"
+
+# Add a footer
+footer = doc.sections[0].footer
+footer_paragraph = footer.paragraphs[0]
+footer_paragraph.text = "This is the footer"
+
+# Add some body text
+doc.add_paragraph("This is the body text of the document.")
+
+# Save the document
+doc.save('/mnt/data/header_footer_example.docx')
+```
+
+
+
+
+
+## Working with PDF Files
 
 Managing PDF files often involves reading, extracting text, and sometimes converting them to other formats. Here’s how to handle PDF files using Python:
 
@@ -341,7 +430,7 @@ with open('/mnt/data/example.pdf', 'rb') as file:
     print(text)
 ```
 
-#### Creating and Writing to PDF Files
+### Creating and Writing to PDF Files
 
 Creating and writing text to PDF files can be done using the `fpdf2` library:
 
