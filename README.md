@@ -456,7 +456,7 @@ pdf.cell(200, 10, txt = "Welcome to PDF handling with Python!", ln = True, align
 pdf.output('/mnt/data/new_example.pdf')
 ```
 
-#A dvanced PDF Processing
+# Advanced PDF Processing
 Handling PDF files often involves reading, extracting text, merging, splitting, and modifying documents. Here are some advanced operations using Python:
 ### Merging Multiple PDF Files
 
