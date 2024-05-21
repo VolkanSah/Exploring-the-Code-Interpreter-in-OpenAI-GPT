@@ -25,6 +25,8 @@ reasons, it opens up a whole new set of possibilities for how users can interact
 - [Working with PDF-Files](#working-with-pdf-files)
   - [Advanced PDF Processing](#advanced-pdf-processing)
 - [Advanced Applications of the Code Interpreter (GPT)](advanced-1.md)
+- [Contributing](#contributing)
+- [Credits](#credits)
 
 
 
@@ -578,21 +580,6 @@ with open('/mnt/data/metadata_example.pdf', 'wb') as metadata_pdf:
 
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request.
 
@@ -608,7 +595,6 @@ If you appreciate my work, please consider supporting me:
 - [Secure Implementation of Artificial Intelligence (AI)](https://github.com/VolkanSah/Implementing-AI-Systems-Whitepaper)
 - [Comments Reply with GPT (davinci3)](https://github.com/VolkanSah/GPT-Comments-Reply-WordPress-Plugin)
 - [Basic GPT Webinterface](https://github.com/VolkanSah/GPT-API-Integration-in-HTML-CSS-with-JS-PHP)
-
 
 
 ### Credits
