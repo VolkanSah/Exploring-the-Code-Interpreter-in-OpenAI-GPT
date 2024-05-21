@@ -14,10 +14,12 @@ reasons, it opens up a whole new set of possibilities for how users can interact
 - [How can ChatGPT assist with programming?](#how-can-chatgpt-assist-with-programming)
 - [What are the limitations?](#what-are-the-limitations)
 - [What are the benefits?](#what-are-the-benefits)
+- [Installation and Setup](#installation-and-setup)
 - [Data Storage](#data-storage)
     - [Detailed Explanation of the Data Storage](#detailed-explanation-of-the-data-storage)
 - [Working with Images](#working-with-images)
 - [Working with Exel-Files](#working-with-excel-files)
+      - [Advanced Excel Processing](advanced-excel-processing)
 - [Working with Word-Files](#working-with-word-files)
 - [Working with PDF-Files](#working-with-pdf-files)
 
@@ -60,6 +62,14 @@ The code interpreter offers several benefits:
 - It allows for real-time interaction with the code, providing immediate feedback.
 - It can assist in learning Python programming and improving coding skills.
 - It can handle a variety of tasks, from simple calculations to data analysis and visualization.
+
+## Installation and Setup
+
+To execute the examples mentioned in this README, you need to install some Python libraries. You can install them using pip:
+
+```shell
+pip install pandas openpyxl python-docx PyPDF2 fpdf2 matplotlib pillow
+```
 
 ## Data Storage
 
@@ -226,6 +236,55 @@ df['Age Next Year'] = df['Age'] + 1
 # Sort data
 sorted_df = df.sort_values(by='Age', ascending=False)
 ```
+
+### Advanced Excel Processing
+
+Besides reading and writing Excel files, you can also perform advanced data processing tasks such as creating pivot tables or merging multiple Excel files.
+#### Creating a Pivot Table
+
+```python
+import pandas as pd
+
+# Load example data
+df = pd.read_excel('/mnt/data/example.xlsx')
+
+# Create a pivot table
+pivot_table = df.pivot_table(index='Category', values='Sales', aggfunc='sum')
+
+# Display the pivot table
+print(pivot_table)
+```
+#### Merging Multiple Excel Files
+
+```python
+import pandas as pd
+import glob
+
+# Read all Excel files in the directory
+files = glob.glob('/mnt/data/*.xlsx')
+
+# Merge data from all files
+df_list = [pd.read_excel(file) for file in files]
+merged_df = pd.concat(df_list, ignore_index=True)
+
+# Display the merged data
+print(merged_df.head())
+```
+
+#### Troubleshooting
+Here are some common issues and their solutions:
+
+1. ImportError: No module named '...':
+- Ensure that all required libraries are installed. Use pip install <library_name> to install any missing libraries.
+
+2. FileNotFoundError: [Errno 2] No such file or directory: '...':
+- Check the file path and ensure that the file is in the correct directory. Use absolute paths or ensure that the file is saved in /mnt/data.
+
+3. PermissionError: [Errno 13] Permission denied: '...':
+- Ensure that you have permissions to read and write in the /mnt/data directory.
+
+**If you encounter further issues, open an issue on GitHub or contact the project maintainer.**
+
 
 ### Working with Word Files
 
