@@ -1,7 +1,7 @@
 
 # Advanced Applications of the Code Interpreter (GPT)
 
-[For Webview](https://volkansah.github.io/Advanced-Code-Interpreter-Examples/advanced-1/)
+[Go Back](https://volkansah.github.io/Advanced-Code-Interpreter-Examples/)
 
 The code interpreter in OpenAI's GPT is a powerful tool that enables complex and interactive coding capabilities within a safe and sandboxed environment. This README provides examples of advanced applications, demonstrating how to leverage this tool for sophisticated tasks.
 
