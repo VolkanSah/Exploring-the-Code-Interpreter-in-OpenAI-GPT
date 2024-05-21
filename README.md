@@ -19,7 +19,7 @@ reasons, it opens up a whole new set of possibilities for how users can interact
     - [Detailed Explanation of the Data Storage](#detailed-explanation-of-the-data-storage)
 - [Working with Images](#working-with-images)
 - [Working with Exel-Files](#working-with-excel-files)
-      - [Advanced Excel Processing](advanced-excel-processing)
+  - [Advanced Excel Processing](#advanced-excel-processing)
 - [Working with Word-Files](#working-with-word-files)
 - [Working with PDF-Files](#working-with-pdf-files)
 
