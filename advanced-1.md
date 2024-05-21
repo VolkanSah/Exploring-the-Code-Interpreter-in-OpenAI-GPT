@@ -106,7 +106,8 @@ print(merged_df.head())
 
 Scraping Data from Web Pages with BeautifulSoup
 
-Using BeautifulSoup to scrape data from web pages for analysis.
+### Using BeautifulSoup to scrape data from web pages for analysis.
+maybe usefull? [Python-XPath Tutorial](https://github.com/VolkanSah/Python-XPath-Tutorial) | [JavaScript-XPath Tutorial](https://github.com/VolkanSah/JavaScript-XPath-Tutorial)
 
 ```python
 import requests
