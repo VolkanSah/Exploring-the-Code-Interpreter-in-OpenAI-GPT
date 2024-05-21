@@ -52,9 +52,9 @@ plt.show()
 
 ## Machine Learning Applications
 
-Building a Predictive Model with Scikit-Learn
+### Building a Predictive Model with Scikit-Learn
 
-Creating a machine learning model to predict outcomes based on complex datasets.
+#### Creating a machine learning model to predict outcomes based on complex datasets.
 
 ```python
 import pandas as pd
@@ -82,9 +82,9 @@ print(f'Mean Squared Error: {mse}')
 
 ## Advanced Data Processing
 
-Merging Multiple DataFrames
+### Merging Multiple DataFrames
 
-Merging multiple dataframes to create a comprehensive dataset for analysis.
+#### Merging multiple dataframes to create a comprehensive dataset for analysis.
 
 ```python
 import pandas as pd
@@ -104,9 +104,9 @@ print(merged_df.head())
 
 ## Web Scraping
 
-Scraping Data from Web Pages with BeautifulSoup
+### Scraping Data from Web Pages with BeautifulSoup
 
-### Using BeautifulSoup to scrape data from web pages for analysis.
+#### Using BeautifulSoup to scrape data from web pages for analysis.
 maybe usefull? [Python-XPath Tutorial](https://github.com/VolkanSah/Python-XPath-Tutorial) | [JavaScript-XPath Tutorial](https://github.com/VolkanSah/JavaScript-XPath-Tutorial)
 
 ```python
@@ -135,9 +135,9 @@ for item in data:
 
 ## Natural Language Processing
 
-Sentiment Analysis with TextBlob
+### Sentiment Analysis with TextBlob
 
-Performing sentiment analysis on text data using TextBlob.
+#### Performing sentiment analysis on text data using TextBlob.
 
 ```python
 from textblob import TextBlob
@@ -155,9 +155,9 @@ print(f'Sentiment: {sentiment}')
 
 ## Image Processing
 
-Advanced Image Manipulations with PIL
+### Advanced Image Manipulations with PIL
 
-Performing advanced image manipulations using the Python Imaging Library (PIL).
+#### Performing advanced image manipulations using the Python Imaging Library (PIL).
 
 ```python
 from PIL import Image, ImageEnhance, ImageFilter
@@ -179,9 +179,9 @@ img_filtered.show()
 
 ## Interactive Widgets
 
-Creating Interactive Widgets with ipywidgets
+### Creating Interactive Widgets with ipywidgets
 
-Creating interactive widgets to enhance user interaction within Jupyter notebooks.
+#### Creating interactive widgets to enhance user interaction within Jupyter notebooks.
 
 ```python
 import ipywidgets as widgets
@@ -203,13 +203,13 @@ display(slider)
 
 ## Troubleshooting
 
-Here are some common issues and their solutions:
+### Here are some common issues and their solutions:
 
 - `ImportError: No module named '...'`: Ensure that all required libraries are installed. Use `pip install <library_name>` to install any missing libraries.
 - `FileNotFoundError: [Errno 2] No such file or directory: '...'`: Check the file path and ensure that the file is in the correct directory. Use absolute paths or ensure that the file is saved in `/mnt/data`.
 - `PermissionError: [Errno 13] Permission denied: '...'`: Ensure that you have permissions to read and write in the `/mnt/data` directory.
 
-If you encounter further issues, open an issue on GitHub or contact the project maintainer.
+#### If you encounter further issues, open an issue on GitHub or contact the project maintainer.
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request.
