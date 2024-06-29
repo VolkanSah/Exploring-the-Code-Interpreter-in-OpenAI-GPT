@@ -214,10 +214,6 @@ display(slider)
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request.
 
-### [❤️](https://jugendamt-deutschland.de) Thank you for your support!
-If you appreciate my work, please consider supporting me:
-
-
 ### 👣 other GPT stuff 
 - [Link to ChatGPT Shellmaster](https://github.com/VolkanSah/ChatGPT-ShellMaster/)
 - [GPT-Security-Best-Practices](https://github.com/VolkanSah/GPT-Security-Best-Practices)
