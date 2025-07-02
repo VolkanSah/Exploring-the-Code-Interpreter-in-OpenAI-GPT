@@ -109,6 +109,8 @@ print(merged_df.head())
 #### Using BeautifulSoup to scrape data from web pages for analysis.
 maybe usefull? [Python-XPath Tutorial](https://github.com/VolkanSah/Python-XPath-Tutorial) | [JavaScript-XPath Tutorial](https://github.com/VolkanSah/JavaScript-XPath-Tutorial)
 
+Otherwise, live web scraping won’t run inside the sandbox.
+
 ```python
 import requests
 from bs4 import BeautifulSoup
@@ -138,6 +140,7 @@ for item in data:
 ### Sentiment Analysis with TextBlob
 
 #### Performing sentiment analysis on text data using TextBlob.
+Note: The Code Interpreter environment is limited in resources, so training large or GPU-heavy models may not be feasible. It’s mostly suitable for small datasets and quick tests.
 
 ```python
 from textblob import TextBlob
@@ -183,6 +186,8 @@ img_filtered.show()
 
 #### Creating interactive widgets to enhance user interaction within Jupyter notebooks.
 
+The interactive widgets only work inside Jupyter notebook environments. They do not render in the Code Interpreter UI or ChatGPT interface, so you won’t see GUI controls there.
+
 ```python
 import ipywidgets as widgets
 from IPython.display import display
@@ -226,9 +231,9 @@ Contributions are welcome! Please feel free to submit a pull request.
 
 
 ### Credits
-- [Volkan Kücükbudak //NCF](https://gihub.com/volkansah)
+- [Volkan Kücükbudak //NCF](https://github.com/volkansah)
 - and OpenAI's ChatGPT4 with Code Interpreter for providing interactive coding assistance and insights & tipps.
 -  Become a Sponsor: [Link to my sponsorship page](https://github.com/sponsors/volkansah)
 - :star: my projects: Starring projects on GitHub helps increase their visibility and can help others find my work. 
 - Follow me: Stay updated with my latest projects and releases.
-- [Source of this resposerity](https://github.com/VolkanSah/The-Code-Interpreter-in-OpenAI-GPT/)
+- [Source of this repository](https://github.com/VolkanSah/The-Code-Interpreter-in-OpenAI-GPT/)
