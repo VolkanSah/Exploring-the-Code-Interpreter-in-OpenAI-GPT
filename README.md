@@ -1,5 +1,5 @@
 # Exploring the Code Interpreter in OpenAI (GPT)
-###### (version 21.05.2024)
+###### (version 02.07.2025)
 
 The code interpreter is an advanced feature of OpenAI's GPTs.x & ChatGPT that brings a new level of interactivity to the AI model. 
 It is designed to execute Python code in a sandboxed environment and provide real-time results, making it a powerful 
