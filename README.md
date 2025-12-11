@@ -1,4 +1,4 @@
-# **The Code Execution Environment in OpenAI GPT (Updated 2025)**
+# The Code Execution Environment in OpenAI GPT 
 
 #### (version 11.12.2025)
 
